@@ -6,11 +6,15 @@ It generates a markdown file (`assetImageRef.md`) that lists all of the `.png` f
 I wrote this to parse the image asset folder of the iOS app. It generates a nice list of asset names and the corresponding images, and the directory they belong to.
 
 To execute the script:
-`python findImageDFS.py`
+```
+python findImageDFS.py
+```
 The designated folder is default to the folder that the script is in.
 
-it also takes optional parameter `pathToFolder` :
-`python findImageDFS.py pathToFolder`
+it also takes optional parameter `pathToFolder`:
+```
+python findImageDFS.py pathToFolder
+```
 
 sample `assetImageRef.md`
 ```
