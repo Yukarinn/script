@@ -1,17 +1,33 @@
 Some scipts that may be useful.
 
-## findImageDFS.py
-[can be found here](findImageDFS.py)
-It generates a markdown file (`assetImageRef.md`) that lists all of the `.png` files with their names and the images. The script finds the images from the designated folder and its subfolders. Organizes the images by folder and the level of the folder. This is done using depth-first search.
+- [Solarized ZSH theme](#solarized)
+- [FindImageDFS](#findimagedfs)
+
+## Solarized
+[solarized.zsh-theme](solarized.zsh-theme)
+
+Custom [Oh my Zsh](https://github.com/ohmyzsh/ohmyzsh) theme.
+
+![solarized](/img/solarized.png)
+
+1. Copy file `solarized.zsh-theme` to `$ZSH_CUSTOM/themes` folder. 
+1. Set theme to `solarized` in `~/.zshrc`.
+    ```
+    ZSH_THEME="solarized"
+    ```
+
+
+## FindImageDFS
+[findImageDFS.py](findImageDFS.py)
+It generates a markdown file (`assetImageRef.md`) that lists all of the `.png` files with their names and the images recursively. This is done using depth-first search.
+
 I wrote this to parse the image asset folder of the iOS app. It generates a nice list of asset names and the corresponding images, and the directory they belong to.
 
-To execute the script:
+Execute the script in the top folder:
 ```
 python findImageDFS.py
 ```
-The designated folder is default to the folder that the script is in.
-
-it also takes optional parameter `pathToFolder`:
+or 
 ```
 python findImageDFS.py pathToFolder
 ```
